@@ -310,7 +310,7 @@ p span{
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
-#preloaderfinal {
+.preloader {
     position: fixed;
     inset: 0;
     z-index: 9999;
@@ -326,22 +326,22 @@ p span{
     height: 100vh;
   }
   
-  #preloaderfinal:before,
-  #preloaderfinal:after {
+  .preloader:before,
+  .preloader:after {
     content: "";
     position: absolute;
     border: 4px solid $brillante;
     border-radius: 50%;
-    -webkit-animation: animate-preloaderfinal 2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
-    animation: animate-preloaderfinal 2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+    -webkit-animation: animate-preloader 2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+    animation: animate-preloader 2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
   }
   
-  #preloaderfinal:after {
+  .preloader:after {
     -webkit-animation-delay: -0.5s;
     animation-delay: -0.5s;
   }
   
-  @-webkit-keyframes animate-preloaderfinal {
+  @-webkit-keyframes animate-preloader {
     0% {
       width: 10px;
       height: 10px;
@@ -359,7 +359,7 @@ p span{
     }
   }
   
-  @keyframes animate-preloaderfinal {
+  @keyframes animate-preloader {
     0% {
       width: 10px;
       height: 10px;
