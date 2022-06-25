@@ -15,6 +15,12 @@
      *---------------------------Preloader and Anchor Tag---------------
      * -----------------------------------------------------------------
      */
+    const preloader = document.querySelector("#preloaderfinal");
+    if (preloader) {
+      window.addEventListener("load", () => {
+        preloader.remove();
+      });
+    }
 
     var themeWindow = $(window);
     var pagebody = $("html, body");
