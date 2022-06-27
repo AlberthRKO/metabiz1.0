@@ -304,16 +304,16 @@ $.getJSON("lang/lang.json", function (json) {
       sectionsColor: [],
       anchors: [
         "home",
-        "work",
-        "about",
-        "objetivo",
+        "history",
+        "vision",
+        "mission",
         "metamask",
-        "resume",
-        "service",
-        "client-testimonial",
-        "portfolio",
-        "blog",
-        "contact",
+        "roadmap",
+        "services",
+        "started",
+        "ecosystem",
+        // "plans",
+        "counter",
       ],
 
       scrollingSpeed: 700,
@@ -360,8 +360,8 @@ $.getJSON("lang/lang.json", function (json) {
         $(".animado9").removeClass("aos-init").removeClass("aos-animate");
         $(".animado10").hide(0);
         $(".animado10").removeClass("aos-init").removeClass("aos-animate");
-        $(".animado11").hide(0);
-        $(".animado11").removeClass("aos-init").removeClass("aos-animate");
+        /*       $(".animado11").hide(0);
+        $(".animado11").removeClass("aos-init").removeClass("aos-animate"); */
         if (nextIndex == 1) {
           $(".animado1").show(0);
           AOS.init({
@@ -472,7 +472,7 @@ $.getJSON("lang/lang.json", function (json) {
             offset: -1500,
           });
         }
-        if (nextIndex == 11) {
+        /*  if (nextIndex == 11) {
           $(".animado11").show(0);
           AOS.init({
             easing: "ease-in-out-back",
@@ -482,7 +482,7 @@ $.getJSON("lang/lang.json", function (json) {
             anchorPlacement: "top-center",
             offset: -1500,
           });
-        }
+        } */
       },
     });
 

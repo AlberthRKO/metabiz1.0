@@ -458,3 +458,251 @@ p span{
       opacity: 0;
     }
   }
+
+
+
+
+/* Estilos para el timeline roadMap */
+
+.container-road{
+	width: 70%;
+	height: auto;
+	position: relative;
+}
+.container-road ul{
+	list-style: none;
+}
+.container-road ul::after{
+	position: absolute;
+	content: '';
+	width: 20px;
+	height: 100%;
+	background: red;
+	top: 0;
+	z-index: 100;
+}
+.container-road ul li{
+	width: 50%;
+	height: auto;
+	padding: 15px 20px;
+	box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.284);
+	border-radius: 10px;
+	margin-bottom: 30px;
+  background:rgba(253,105,0,0.1);
+  transition: .5s;
+	z-index: 99;
+	position: relative;
+}
+.container-road ul li:hover{
+  background:rgba(253,105,0,0.3);
+}
+.container-road ul li::before{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-top: 1px solid $brillante;
+  border-left: 1px solid $brillante;
+  transition: .5s;
+}
+.container-road ul li::after{
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-bottom: 1px solid $brillante;
+  border-right: 1px solid $brillante;
+  transition: .5s;
+}
+.container-road ul li:hover::before,
+.container-road ul li:hover::after{
+  width: 100%;
+  height: 100%;
+}
+.container-road ul li:nth-child(odd){
+	float: left;
+	clear: right;
+	transform: translateX(-30px);
+	// text-align: right;
+}
+.container-road ul li:nth-child(even){
+	float: right;
+	clear: left;
+	transform: translateX(30px);
+  // text-align: left;
+}
+/* .container-road ul li:nth-child(4){
+	margin-bottom: 0;
+} */
+.container-road ul li .title{
+	font-size: 20px;
+	font-weight: bold;
+	color: $brillante;
+}
+.container-road ul li p{
+	font-size: 15px;
+	color: $text-info;
+	margin: 7px 0;
+	line-height: 23px;
+}
+// .container-road ul li a{
+// 	font-size: 15px;
+// 	color: rgb(106, 6, 236);
+// 	text-decoration: none;
+// }
+.container-road ul li .date{
+	position: absolute;
+	top: -60px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	color: #fff;
+	// background-image: linear-gradient(to right, rgb(106, 6, 236), rgb(220, 0, 240));
+	display: grid;
+	place-items: center;
+	font-size: 14px;
+	box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.418);
+}
+.container-road ul li .fecha{
+	position: absolute;
+	top: -52px;
+	color: #fff;
+  width: auto;
+  height: auto;
+  padding: 5px 15px;
+  border-radius: 10px;
+	// background-image: linear-gradient(to right, rgb(106, 6, 236), rgb(220, 0, 240));
+	display: grid;
+	place-items: center;
+	font-size: 14px;
+	box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.418);
+}
+.container-road ul li:nth-child(odd) .date{
+	right: 0px;
+}
+.container-road ul li:nth-child(even) .date{
+	left: 0px;
+}
+.container-road ul li:nth-child(odd) .fecha{
+	right: 80px;
+}
+.container-road ul li:nth-child(even) .fecha{
+	left: 80px;
+}
+
+.container-road ul li .circle{
+	width: 30px;
+	height: 30px;
+	background-color: rgba($color: $brillante, $alpha: .3);
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	z-index: 99;
+}
+.container-road ul li .circle::before{
+	content: ' ';
+	width: 15px;
+	height: 15px;
+	background-color: $brillante;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.container-road ul li .circle::after{
+	content: ' ';
+	width: 5px;
+	height: 80px;
+	background-color: $brillante;
+	position: absolute;
+  top: 25px;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.container-road ul li:nth-child(odd) .circle{
+	right: -30px;
+	transform: translate(50%, -50%);
+}
+
+.container-road ul li:nth-child(even) .circle{
+	left: -30px;
+	transform: translate(-50%, -50%);
+}
+
+/*  ----  Media Query Started  ----  */
+
+@media screen and (max-width:1224px) {
+	.container-road{
+		width: 85%;
+	}
+}
+
+
+@media screen and (max-width:933px) {
+	.container-road{
+		width: 100%;
+        padding-right: 30px;
+		transform: translateX(15px);
+	}
+  .container-road ul li .circle::after{
+    
+    height: 110px;
+  }
+	.container-road ul::after{
+		left: -30px;
+	}
+	.container-road ul li{
+		width: 100%;
+		float: none;
+		clear: none;
+		margin-bottom: 80px;
+	}
+	.container-road ul li:nth-child(even),
+	.container-road ul li:nth-child(odd){
+		transform: translateX(0);
+		text-align: left;
+	}
+	.container-road ul li:nth-child(odd) .date{
+		left: 0px;
+	}
+	.container-road ul li:nth-child(odd) .fecha{
+		left: 80px;
+	}
+	.container-road ul li:nth-child(even) .fecha{
+		right: 80px;
+	}
+	.container-road ul li:nth-child(odd) .circle{
+		left: -30px;
+		transform: translate(-50%, -50%);
+	}
+	.container-road ul li:nth-child(even){
+		transform: translateX(0);
+	}
+}
+.road1{
+  background: #005284;
+}
+.road2{
+  background: #00b3e6;
+}
+.road3{
+  background: #00d2db;
+}
+.road4{
+  background: #a3073d;
+}
+.road5{
+  background: #ff4755;
+}
+.road6{
+  background: #fc9416;
+}
+.road7{
+  background: #ffc546;
+}
