@@ -1,8 +1,54 @@
 {
     "es":{
-        "prueba1":"Idioma"
+        "nav1":"Home",
+        "nav2":"Historia",
+        "nav3":"Visión",
+        "nav4":"Objetivo",
+        "nav5":"Metamask",
+        "nav6":"Mapa",
+        "nav7":"Servicios",
+        "nav8":"Empezar",
+        "nav9":"Ecosistema",
+        "nav10":"Planes",
+        "nav11":"Contacto",
+        "esp":"Español",
+        "eng":"Ingles",
+        "ptg":"Portugues",
+        "sigin":"Login/Registro"
     },
     "en":{
-        "prueba1":"Idiom"
+        "nav1":"Home",
+        "nav2":"History",
+        "nav3":"Vision",
+        "nav4":"Objective",
+        "nav5":"Metamask",
+        "nav6":"RoadMap",
+        "nav7":"Services",
+        "nav8":"Started",
+        "nav9":"Ecosystem",
+        "nav10":"Plans",
+        "nav11":"Contact",
+        "esp":"Spanish",
+        "eng":"English",
+        "ptg":"Portuguese",
+        "sigin":"Sign-In/Sign-Up"
+    },
+    "br":{
+        "nav1":"Home",
+        "nav2":"História",
+        "nav3":"Visão",
+        "nav4":"Objetivo",
+        "nav5":"Metamask",
+        "nav6":"Roteiro",
+        "nav7":"Serviços",
+        "nav8":"Começar",
+        "nav9":"Ecossistema",
+        "nav10":"Planos",
+        "nav11":"Contato",
+        "esp":"Espanhol",
+        "eng":"Inglês",
+        "ptg":"Português",
+        "sigin":"Conecte-se/Cadastro"
     }
 }
+
