@@ -1,178 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="libs/rd-navbar/dist/css/rd-navbar.css">
-    <link rel="stylesheet" href="libs/css/estilos.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
 </head>
 
 <body>
-    <header class="sliderss">
+    <h1>Hello, world!</h1>
+    <div class="btn-group">
+        <button type="button" class="btn btn-danger">Action</button>
+        <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li>
+                <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+    </div>
 
-        <div class="rd-navbar-wrap">
-            <nav class="rd-navbar">
-                <div class="encabezado">
-                    <div class="rd-navbar-inner px-0">
-                        <div class="rd-navbar-panel py-0">
-                            <button class="rd-navbar-toggle toggle-original"
-                                data-rd-navbar-toggle=".rd-navbar-nav-wrap">
-                                <span></span>
-                            </button>
-                            <!-- <button data-rd-navbar-toggle=".rd-navbar, .form-search-wrap" class="rd-navbar-search-toggle">
-                <span></span>
-              </button> -->
-                            <button class="rd-navbar-collapse-toggle toggle-original"
-                                data-rd-navbar-toggle=".rd-navbar-collapse">
-                                <span></span>
-                            </button>
-                            <div class="rd-navbar-collapse">
-                                <div class="container-lg">
-                                    <div class="row justify-content-between">
-                                        <div class="col-auto">
-                                            <ul class="list-unstyled mb-0  text-warning">
+    <!-- Optional JavaScript; choose one of the two! -->
 
-                                                <li>
-                                                    <span class="mdi mdi-account align-middle"></span>
-                                                    Alberto Paredes
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-12 col-lg-auto mt-lg-0 mt-2">
-                                            <ul class="d-flex justify-content-lg-center mx-auto list-unstyled mb-0">
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
-                                                <li>
-                                                    <a href="login.html"
-                                                        class="fst-normal text-decoration-none text-warning"><i
-                                                            class="mdi mdi-logout align-middle fst-normal me-2">Salir</i></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <button class="rd-navbar-search-toggle" data-rd-navbar-toggle=".rd-navbar-search">
-                                <span></span>
-                            </button>
-                            <!-- <div class="rd-navbar-search-wrap">
-                <button class="rd-navbar-search-toggle" data-rd-navbar-toggle=".rd-navbar-search">
-                  <span></span>
-                </button>
-                <div class="rd-navbar-search">
-                  <form action="" method="post">
-                    <div class="form-group">
-                      <input id="rd-navbar-search-input" type="text" class="form-control" placeholder="Search">
-                    </div>
-                    <button type="submit" class="material-icons-search"></button>
-                  </form>
-                </div>
-              </div>
-                 -->
-                        </div> <!-- rd-navbar-inner -->
-                    </div>
-                </div> <!-- encabezado -->
-                <!-- * Etiqueta hermana del contenido desplegable-->
-                <div class="rd-navbar-outer">
-                    <div class="rd-navbar-inner">
-                        <div class="rd-navbar-panel-canvas"></div>
-                        <div class="container">
-                            <div class="row justify-content-between align-items-center">
-                                <div class="col-2">
-                                    <img src="images/logo.png" alt="Logo" class="img-fluid rd-navbar-brand" width="180">
-                                </div>
-                                <div class="col-auto">
-                                    <div class="rd-navbar-menu-wrap">
-                                        <div class="rd-navbar-nav-wrap">
-                                            <ul class="rd-navbar-nav list-unstyled mb-0">
-                                                <li><a href="index.html">Home</a></li>
-                                                <li><a href="">Planos</a></li>
-
-
-                                                <li><a href="#about">Redes</a>
-
-                                                    <!-- RD Navbar Dropdown -->
-                                                    <ul class="rd-navbar-dropdown twodrop list-unstyled">
-
-                                                        <li><a href="pendientes.html">Pendientes</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="red_binaria.html">Red Binaria</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="puntos_binarios.html">Puntos
-                                                                Binarios</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="clave_binaria.html">Clave Binaria</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="plano_carreras.html">Plano
-                                                                Carrera</a>
-                                                        </li>
-
-                                                    </ul>
-                                                    <!-- END RD Navbar Dropdown -->
-
-                                                </li>
-                                                <li>
-                                                    <!-- crando un submenu -->
-                                                    <a href="#">Financiero</a>
-                                                    <ul class="rd-navbar-dropdown list-unstyled">
-                                                        <li><a href="facturas.html">Facturas</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="enviar_recibo.html">Enviar
-                                                                Comprobante</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="pago.html">Pago</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="saque.html">Retiro</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="extracto.html">Extracto</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="#">Soporte/Ticket</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                    <div class="rd-navbar-search-wrap">
-                                        <div class="rd-navbar-search">
-                                            <form action="#" method="post">
-                                                <div class="form-group">
-                                                    <input id="rd-navbar-search-input" type="text" class="form-control"
-                                                        placeholder="Buscar...">
-                                                </div>
-                                                <button type="submit" class="mdi mdi-magnify"></button>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
-    <script src="js/jquery.min.js"></script>
-    <!-- carga de animacion -->
-    <script src="js/aos.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/lightbox.js"></script>
-    <script src="libs/rd-navbar/dist/js/jquery.rd-navbar.min.js"></script>
-    <script src="js/main.js"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
 </body>
 
 </html>

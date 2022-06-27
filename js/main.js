@@ -4,6 +4,15 @@
  *Version:1.1
  *-------------------------------------
  */
+$.getJSON("lang/lang.json", function (json) {
+  $(".translate").click(function () {
+    let lang = $(this).attr("id");
+    $(".lang").each(function (index, value) {
+      $(this).text(json[lang][$(this).attr("key")]);
+    });
+  });
+});
+
 (function ($) {
   "use strict";
 
@@ -21,6 +30,10 @@
         preloader.remove();
       });
     } */
+    /* $(".translate").click(function () {
+      let lang = $(this).attr("id");
+      console.log(lang);
+    }); */
 
     var themeWindow = $(window);
     var pagebody = $("html, body");
@@ -32,10 +45,10 @@
       themeWindow.scrollTop(0);
     });
 
-    var anchor = $('a[href="#"]');
+    /* var anchor = $('a[href="#"]');
     anchor.on("click", function () {
       e.preventDefault();
-    });
+    }); */
 
     /*
      * -----------------------------------------------------------------
