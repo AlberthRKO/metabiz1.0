@@ -102,6 +102,19 @@ h2 {
           transform: scale(1.2);
 }
 
+.vbox-close {
+  margin-top: 20px;
+  margin-right: 20px;
+  color: #ff6e00 !important;
+}
+
+@media (min-width: 992px) {
+  .venoratio {
+    width: 960px;
+    height: 540px;
+  }
+}
+
 .work .display-content {
   position: relative;
   overflow: hidden;
@@ -281,6 +294,7 @@ p span {
 }
 
 .content-service {
+  width: 100%;
   position: relative;
   background: rgba(253, 105, 0, 0.1);
   -webkit-transition: .5s;
@@ -784,5 +798,16 @@ p span {
 
 .road7 {
   background: #ffc546;
+}
+
+/* Seccion de arreglos */
+@media (max-width: 567px) {
+  .swiper-slide h3 {
+    font-size: 23px;
+  }
+}
+
+.swiper-pagination-bullet {
+  background: #ff6e00 !important;
 }
 /*# sourceMappingURL=estilos.css.map */

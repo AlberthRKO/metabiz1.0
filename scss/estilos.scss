@@ -88,6 +88,21 @@ h2{
 .contenedor-video:hover img {
     transform: scale(1.2);
 }
+
+.vbox-close{
+  margin-top: 20px;
+  margin-right: 20px;
+  color: $brillante !important;
+}
+
+@media (min-width: 992px){
+  .venoratio {
+    width: 960px;
+    height: 540px;
+  }
+}
+
+
 .work .display-content{
     position: relative;
     overflow: hidden;
@@ -238,23 +253,24 @@ p span{
 }
 
 .content-service{
-    position:relative;
-    background:rgba(253,105,0,0.1);
-    transition: .5s;
+  width: 100%;
+  position:relative;
+  background:rgba(253,105,0,0.1);
+  transition: .5s;
 }
 .content-service:hover{
-    background:rgba(253,105,0,0.3);
+  background:rgba(253,105,0,0.3);
 }
 .content-service::before{
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 10px;
-    height: 10px;
-    border-top: 1px solid $brillante;
-    border-left: 1px solid $brillante;
-    transition: .5s;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-top: 1px solid $brillante;
+  border-left: 1px solid $brillante;
+  transition: .5s;
 }
 .content-service::after{
     position: absolute;
@@ -705,4 +721,16 @@ p span{
 }
 .road7{
   background: #ffc546;
+}
+
+
+/* Seccion de arreglos */
+@media (max-width: 567px){
+  .swiper-slide h3{
+    font-size: 23px;
+  }
+  
+}
+.swiper-pagination-bullet{
+  background: $brillante !important;
 }

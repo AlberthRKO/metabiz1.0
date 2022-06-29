@@ -517,18 +517,14 @@ $.getJSON("lang/lang.json", function (json) {
       // activamos el elemento clicado.
     });
 
-    // Iniciando script venobox.. colocamos el elemnto disparador
-    $(".venobox-video").venobox({
-      overlayClose: true /* aser que no se cierre con los alrededores */,
-      bgcolor: "#000" /* color del contenedor del video */,
-      //border:'10px',
-      //closeBackground:'#000',
-      //closeColor:'#fff'
-      // overlayColor:'rgba(0,0,0,1.0)' /* color de fondo  */
-      share: [],
-      spinner: "cube-grid",
-      titleattr: "Clinica Dental",
+    new VenoBox({
+      overlayClose: false,
+      selector: ".venobox-video",
+      bgcolor: "#000",
+      spinColor: "#ff6e00",
+      titleattr: "Metabiz",
       titleColor: "#fff",
+      overlayColor: "rgba(2,44,72,.85)",
     });
 
     // AOS.init();
