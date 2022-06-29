@@ -193,26 +193,29 @@
                             Sign-In/Sign-Up
                         </span><i class="fa fa-lg fa-caret-down"></i>
                     </a>
-                    <!-- <div class="btn-group">
-                        <button type="button" class="btn btn-primario dropdown-toggle" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Idioma
-                            </button>
+                    <!-- Seccion de idiomas -->
+                    <div class="btn-group">
+                        <!-- <button type="button" class="btn btn-primario dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Idioma
+                        </button> -->
                         <a href="#" class="btn btn-secundario w-25 lang" data-bs-toggle="dropdown" aria-expanded="false"
-                            key="prueba1">Idiom</a>
+                            key="idioma"><img src="images/banderas/estados-unidos.png" class="img-fluid" width="25"
+                                alt="">
+                            English</a>
                         <ul class="dropdown-menu">
-                            <li><a id="en" class="dropdown-item translate" href="#"><img
+                            <li><a id="en" class="dropdown-item translate lang" key="eng" href="#"><img
                                         src="images/banderas/estados-unidos.png" class="img-fluid" width="25" alt="">
                                     Ingles</a></li>
-                            <li><a id="es" class="dropdown-item translate" href="#"><img
+                            <li><a id="es" class="dropdown-item translate lang" key="esp" href="#"><img
                                         src="images/banderas/espana.png" class="img-fluid" width="25" alt="">
                                     Español</a></li>
-                            <li><a id="br" class="dropdown-item translate" href="#"><img
+                            <li><a id="br" class="dropdown-item translate lang" key="ptg" href="#"><img
                                         src="images/banderas/brasil.png" class="img-fluid" width="25" alt="">
                                     Portugues</a></li>
 
                         </ul>
-                    </div> -->
+                    </div>
 
 
                 </div>
@@ -243,7 +246,7 @@
                 <div class="content-container">
                     <div class="overlayImg"></div>
                     <div class="title-small">
-                        <p>HOME</p>
+                        <p class="lang" key="nav1">HOME</p>
                     </div>
                     <div class="display-table">
                         <div class="display-content">
@@ -255,12 +258,15 @@
                                                 data-aos="fade-left" alt="" width="150">
                                             <div class="type-wrap animado1" style="margin-top: 0 !important;"
                                                 data-aos="fade-right">
-                                                <div id="typed-strings">
-                                                    <h1>The <span>Metabiz</span> </h1>
+                                                <div>
+                                                    <h1 class="fw-bold lang" key="home-title">The <span>Metabiz</span>
+                                                    </h1>
                                                 </div>
                                                 <span id="typed"></span>
                                             </div>
-                                            <p class="animado1 lead" data-aos="fade-right">Create tour own reality</p>
+                                            <p class="animado1 lead lang" key="home-subtitle" data-aos="fade-right">
+                                                Create tour
+                                                own reality</p>
 
                                             <p class="d-none">
                                                 <a href="#" class="btn btn-secundario py-2 animado1"
@@ -298,7 +304,7 @@
                         <div class="overlayImg"></div>
                         <div class="work-header">
                             <div class="title-small">
-                                <p>HISTORY</p>
+                                <p class="lang" key="nav2">HISTORY</p>
                             </div>
                         </div>
                         <div class="work-content">
@@ -317,11 +323,13 @@
 
                                     </div>
                                     <div class="col-md-6 text-start">
-                                        <p class="animado2 text-warning" data-aos="fade-left">///<span
-                                                class="px-3">History</span>///</p>
-                                        <h2 class="display-4 fw-bold py-3 animado2" data-aos="fade-right">WHO WE ARE
+                                        <p class="animado2 text-warning" data-aos="fade-left">///<span class="px-3 lang"
+                                                key="nav2">History</span>///</p>
+                                        <h2 class="display-4 fw-bold py-3 animado2 lang" key="hist-title"
+                                            data-aos="fade-right">WHO WE ARE
                                         </h2>
-                                        <p class="animado2 text-left lead animado2" data-aos="fade-left">
+                                        <p class="animado2 text-left lead animado2 lang" key="hist-subtitle"
+                                            data-aos="fade-left">
                                             Conceived by <span>MR. Vinny</span> a
                                             <span>Millionaire in the Blockchain industry, Metabiz</span> entered the
                                             market to revolutionize both the traditional financial means of
@@ -350,7 +358,7 @@
         <section class="about section pp-scrollable" id="about">
             <div class="about-header">
                 <div class="title-small">
-                    <p>VISION</p>
+                    <p class="lang" key="nav3">VISION</p>
                 </div>
             </div>
             <div class="content-container">
@@ -363,8 +371,10 @@
                                     <div class="about-content">
                                         <img src="images/arrow_orange.png" class="img-fluid animado3"
                                             data-aos="fade-left" alt="" width="150">
-                                        <h2 class="display-4 fw-bold pb-3 animado3" data-aos="fade-left">VISION</h2>
-                                        <p class="about-text animado3 lead" data-aos="fade-right">
+                                        <h2 class="display-4 fw-bold pb-3 animado3 text-uppercase lang" key="nav3"
+                                            data-aos="fade-left">VISION</h2>
+                                        <p class="about-text animado3 lead lang" key="vision-subtitle"
+                                            data-aos="fade-right">
                                             Use our <span>technological expertise</span> and strengthen our
                                             <span>community through</span> our operations and core structure.
                                             <br><br>
@@ -378,25 +388,28 @@
                                         <div class="col-lg-6 col-md-6 col-sm-12">
                                             <div class="d-flex align-items-center">
                                                 <img src="images/icon_daimond.png" class="img-fluid" alt="" width="50">
-                                                <p class="text-info ms-2">Best Platform with 1000+ Metabiz</p>
+                                                <p class="text-info ms-2 lang" key="vision-1">Best Platform with 1000+
+                                                    Metabiz</p>
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-sm-12">
                                             <div class="d-flex align-items-center">
                                                 <img src="images/icon_ola.png" class="img-fluid" alt="" width="50">
-                                                <p class="text-info ms-2">We will grow your Metabiz in whole World</p>
+                                                <p class="text-info ms-2 lang" key="vision-2">We will grow your Metabiz
+                                                    in whole World</p>
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-sm-12">
                                             <div class="d-flex align-items-center">
                                                 <img src="images/icon_ok.png" class="img-fluid" alt="" width="50">
-                                                <p class="text-info ms-2">We will Metabiz 100%</p>
+                                                <p class="text-info ms-2 lang" key="vision-3">We will Metabiz 100%</p>
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-sm-12">
                                             <div class="d-flex align-items-center">
                                                 <img src="images/icon_airphone.png" class="img-fluid" alt="" width="50">
-                                                <p class="text-info ms-2">We have a strong customer support in 24/7 days
+                                                <p class="text-info ms-2 lang" key="vision-4">We have a strong customer
+                                                    support in 24/7 days
                                                 </p>
                                             </div>
                                         </div>
@@ -437,7 +450,7 @@
         <section class="objetivo section pp-scrollable" id="about">
             <div class="about-header">
                 <div class="title-small">
-                    <p>MISSION</p>
+                    <p class="lang" key="nav4">MISSION</p>
                 </div>
             </div>
             <div class="content-container">
@@ -453,8 +466,10 @@
                                     <div class="about-content">
                                         <img src="images/arrow_orange.png" class="img-fluid animado4"
                                             data-aos="fade-left" alt="" width="150">
-                                        <h2 class="display-4 fw-bold pb-3 animado4" data-aos="fade-left">MISSION</h2>
-                                        <p class="about-text animado4 lead" data-aos="fade-right">
+                                        <h2 class="display-4 fw-bold pb-3 animado4 lang text-uppercase" key="nav4"
+                                            data-aos="fade-left">MISSION</h2>
+                                        <p class="about-text animado4 lead lang" key="mission-subtitle"
+                                            data-aos="fade-right">
                                             <span>Throungh sales and social networks, the main objetive of
                                                 METABIZ</span> is to bring knowledge and opportunities to as many people
                                             as possible. <br><br>
@@ -511,15 +526,20 @@
                                                 class="px-3">METAMASK</span>///</p>
                                         <h2 class="display-4 fw-bold py-3 animado5" data-aos="fade-right">METAMASK 3.0
                                         </h2>
-                                        <p class="text-left lead animado5" data-aos="fade-left">
+                                        <p class="text-left lead animado5 lang" key="meta-subtitle"
+                                            data-aos="fade-left">
                                             Buy, hold, send and exchange tokens in the <span>simplest an safest</span>
                                             way possible using the <span>Metamask wallet.</span><br><br>
                                             It is your key to Web3 and blockchain-based applications. <br><br><br>
-                                        <p class="text-start text-info animado5" data-aos="fade-right"><span>Coomin
+                                        <p class="text-start text-info animado5 lang" key="meta-subtitle2"
+                                            data-aos="fade-right"><span>Cooming
                                                 soon</span> launch of our
                                             <span>Metabiz Coin.</span>
                                         </p>
                                         </p>
+
+
+
 
                                     </div>
                                     <div class="col-lg-6 col-xl-6 animado5 order-0 order-lg-1" data-aos="fade-up">
@@ -541,11 +561,10 @@
                     <div class="display-content">
                         <div class="resume-header" style="text-align:center;">
                             <div class="title-small">
-                                <p>ROADMAP</p>
+                                <p class="lang" key="road-title">ROADMAP</p>
                             </div>
-                            <p class="animado6" data-aos="fade-up"
-                                style="color:#fd6900; font-weight: normal; font-size:14px;">
-                                ///&nbsp;&nbsp;&nbsp;&nbsp;RoadMap Metabiz&nbsp;&nbsp;&nbsp;&nbsp;/// </p>
+                            <p class="animado6 text-warning" data-aos="fade-left">///<span class="px-3 lang"
+                                    key="road-sub">RoadMap Metabiz</span>///</p>
                             <p style="margin-top:10px;"><span class="title-lite animado6 mb-5 pb-5" data-aos="fade-up">
                                     RoadMap
                                 </span><span class="title-bold animado6 p-3" data-aos="fade-up">
@@ -559,8 +578,8 @@
                                 <div class="container container-road animado6" data-aos="fade-right">
                                     <ul>
                                         <li>
-                                            <h3 class="title">Metabiz Bussines</h3>
-                                            <p>Pre-Launch.</p>
+                                            <h3 class="title lang" key="road-1-title">Metabiz Bussines</h3>
+                                            <p class="lang" key="road-1-content">Pre-Launch.</p>
                                             <span class="circle"></span>
                                             <span class="fecha road1 animado6" data-aos="fade-down">06/27/22</span>
                                             <span class="date road1 animado6" data-aos="fade-up"><img
@@ -569,8 +588,9 @@
 
                                         </li>
                                         <li>
-                                            <h3 class="title">Official Launch</h3>
-                                            <p>Top leaders visit the Dubai headquarters for the Grand Launch Event</p>
+                                            <h3 class="title lang" key="road-2-title">Official Launch</h3>
+                                            <p class="lang" key="road-2-content">Top leaders visit the Dubai
+                                                headquarters for the Grand Launch Event</p>
                                             <span class="circle"></span>
                                             <span class="fecha road2 animado6" data-aos="fade-down">08/13/22</span>
                                             <span class="date road2 animado6" data-aos="fade-up"><img
@@ -578,8 +598,10 @@
                                                     alt=""></span>
                                         </li>
                                         <li>
-                                            <h3 class="title">Launch of Metabiz Coin (Blockchain ERC20)</h3>
-                                            <p>1,000,000,000 Metabiz Coins 0,01$ per Metabiz Coin. All distributors
+                                            <h3 class="title lang" key="road-3-title">Launch of Metabiz Coin (Blockchain
+                                                ERC20)</h3>
+                                            <p class="lang" key="road-3-content">1,000,000,000 Metabiz Coins 0,01$ per
+                                                Metabiz Coin. All distributors
                                                 receive 1000 MetaBiz Coins.</p>
                                             <span class="circle"></span>
                                             <span class="fecha road3 animado6" data-aos="fade-down">08/14/22</span>
@@ -588,8 +610,9 @@
                                                     alt=""></span>
                                         </li>
                                         <li>
-                                            <h3 class="title">Official Release</h3>
-                                            <p>Official release of the MetaBiz BlackJack game. Play online multiplayer
+                                            <h3 class="title lang" key="road-4-title">Official Release</h3>
+                                            <p class="lang" key="road-4-content">Official release of the MetaBiz
+                                                BlackJack game. Play online multiplayer
                                                 with your MetaBiz Coins.</p>
                                             <span class="circle"></span>
                                             <span class="fecha road4 animado6" data-aos="fade-down">08/21/22</span>
@@ -598,8 +621,10 @@
                                                     alt=""></span>
                                         </li>
                                         <li>
-                                            <h3 class="title">MetaBiz International BlackJack Championsship</h3>
-                                            <p>1st place - $30,000 <br>2nd place - $20,000
+                                            <h3 class="title lang" key="road-5-title">MetaBiz International BlackJack
+                                                Championsship</h3>
+                                            <p class="lang" key="road-5-content">1st place - $30,000 <br>2nd place -
+                                                $20,000
                                                 <br>3rd place - $10,000
                                             </p>
                                             <span class="circle"></span>
@@ -609,8 +634,9 @@
                                                     alt=""></span>
                                         </li>
                                         <li>
-                                            <h3 class="title">MetaBiz Coin</h3>
-                                            <p>Official launch of MetaBiz Coin on Exchanges.</p>
+                                            <h3 class="title lang" key="road-6-title">MetaBiz Coin</h3>
+                                            <p class="lang" key="road-6-content">Official launch of MetaBiz Coin on
+                                                Exchanges.</p>
                                             <span class="circle"></span>
                                             <span class="fecha road6 animado6" data-aos="fade-down">10/21/22</span>
                                             <span class="date road6 animado6" data-aos="fade-up"><img
@@ -618,8 +644,8 @@
                                                     alt=""></span>
                                         </li>
                                         <li>
-                                            <h3 class="title">International event in Egypt</h3>
-                                            <p>From November 1 to 4</p>
+                                            <h3 class="title lang" key="road-7-title">International event in Egypt</h3>
+                                            <p class="lang" key="road-7-content">From November 1 to 4</p>
                                             <span class="circle"></span>
                                             <span class="fecha road7 animado6" data-aos="fade-down">11/01/22</span>
                                             <span class="date road7 animado6" data-aos="fade-up"><img
@@ -645,13 +671,14 @@
                     <div class="display-content">
                         <div class="service-header">
                             <div class="title-small">
-                                <p>SERVICES</p>
+                                <p class="lang" key="nav7">SERVICES</p>
                             </div>
                             <p class="animado7 text-warning text-uppercase" data-aos="fade-left">///<span
-                                    class="px-3">Our Services
+                                    class="px-3 lang" key="serv-sub">Our Services
                                     METABIZ</span>///</p>
                             <p class="animado7" data-aos="fade-up" style="margin-top:10px;">
-                                <span class="title-lite text-info"> Why We are The Best </span><span class="title-bold">
+                                <span class="title-lite text-info lang" key="serv-title"> Why We are The Best
+                                </span><span class="title-bold">
                                     Metabiz
                                 </span>
                             </p>
@@ -666,47 +693,48 @@
                                 <div class="row">
                                     <div class="col-lg-4 d-flex align-items-stretch mb-3">
                                         <div class="content-service p-3 animado7" data-aos="fade-up">
-                                            <h3 class="text-warning fw-bold h5">Global</h3>
-                                            <p class="text-info">We support a variety of the
+                                            <h3 class="text-warning fw-bold h5 lang" key="serv-1-title">Global</h3>
+                                            <p class="text-info lang" key="serv-1-content">We support a variety of the
                                                 most popular digital currencies.</p>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 d-flex align-items-stretch mb-3">
                                         <div class="content-service p-3 animado7" data-aos="fade-up">
-                                            <h3 class="text-warning fw-bold h5">Support</h3>
-                                            <p class="text-info">We always provide the best
+                                            <h3 class="text-warning fw-bold h5 lang" key="serv-2-title">Support</h3>
+                                            <p class="text-info lang" key="serv-2-content">We always provide the best
                                                 support to all our users.</p>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 d-flex align-items-stretch mb-3">
                                         <div class="content-service p-3 animado7" data-aos="fade-up">
-                                            <h3 class="text-warning fw-bold h5">Crypto</h3>
-                                            <p class="text-info">Cryptocurrency stored on our
+                                            <h3 class="text-warning fw-bold h5 lang" key="serv-3-title">Crypto</h3>
+                                            <p class="text-info lang" key="serv-3-content">Cryptocurrency stored on our
                                                 servers is covered by our
                                                 insurance policy.</p>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 d-flex align-items-stretch mb-3 mb-lg-0">
                                         <div class="content-service p-3 animado7" data-aos="fade-up">
-                                            <h3 class="text-warning fw-bold h5">Language</h3>
-                                            <p class="text-info">This site can be easily translated
+                                            <h3 class="text-warning fw-bold h5 lang" key="serv-4-title">Language</h3>
+                                            <p class="text-info lang" key="serv-4-content">This site can be easily
+                                                translated
                                                 into your own language.</p>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 d-flex align-items-stretch mb-3 mb-lg-0">
                                         <div class="content-service p-3 animado7" data-aos="fade-up">
-                                            <h3 class="text-warning fw-bold h5">Secure</h3>
-                                            <p class="text-info">Gives ultimate security with
+                                            <h3 class="text-warning fw-bold h5 lang" key="serv-5-title">Secure</h3>
+                                            <p class="text-info lang" key="serv-5-content">Gives ultimate security with
                                                 2FA authentication with
                                                 this system</p>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 d-flex align-items-stretch mb-3 mb-lg-0">
                                         <div class="content-service p-3 animado7" data-aos="fade-up">
-                                            <h3 class="text-warning fw-bold h5">Profitable</h3>
-                                            <p class="text-info">You can get the golden
-                                                opportunity to actually
-                                                win a lot of profit here.</p>
+                                            <h3 class="text-warning fw-bold h5 lang" key="serv-6-title">Profitable</h3>
+                                            <p class="text-info lang" key="serv-6-content">You can get the golden
+                                                opportunity to really earn a lot
+                                                of profit here.</p>
                                         </div>
                                     </div>
 
@@ -730,13 +758,12 @@
                     <div class="display-content">
                         <div class="testimonial-header">
                             <div class="title-small">
-                                <p>STARTED</p>
+                                <p class="lang" key="nav8">STARTED</p>
                             </div>
                             <div class="text-center">
                                 <p class="animado8 text-warning text-uppercase" data-aos="fade-left">///<span
-                                        class="px-3">HOW
-                                        METABIZ</span>///</p>
-                                <p class="animado8" data-aos="fade-up" style="margin-top:10px;">
+                                        class="px-3 lang" key="star-sub">Start in Metabiz</span>///</p>
+                                <p class="animado8 lang" key="star-title" data-aos="fade-up" style="margin-top:10px;">
                                     <span class="title-lite text-info"> How to Get </span><span class="title-bold">
                                         Started
                                     </span>
@@ -771,7 +798,8 @@
                                                     <img src="images/client/icon_1.png" width="110px">
                                                 </div>
                                                 <div>
-                                                    <span style="color:#04F2F9 ; "> Create Acount </span>
+                                                    <span style="color:#04F2F9 ; " class="lang" key="star-1"> Create
+                                                        Acount </span>
                                                 </div>
                                             </div>
                                             <div class="col-lg-1 col-md-1 col-sm-3 animado8" data-aos="fade-up">
@@ -783,7 +811,8 @@
                                                     <img src="images/client/icon_2.png" width="110px">
                                                 </div>
                                                 <div>
-                                                    <span style="color:#04F2F9"> Chosse Plan </span>
+                                                    <span style="color:#04F2F9" class="lang" key="star-2"> Chosse Plan
+                                                    </span>
                                                 </div>
                                             </div>
                                             <div class="col-lg-1 col-md-1 col-sm-3 animado8" data-aos="fade-up">
@@ -795,7 +824,8 @@
                                                     <img src="images/client/icon_3.png" width="110px">
                                                 </div>
                                                 <div>
-                                                    <span style="color:#04F2F9"> Invite More People </span>
+                                                    <span style="color:#04F2F9" class="lang" key="star-3"> Invite More
+                                                        People </span>
                                                 </div>
                                             </div>
                                             <div class="col-lg-1 col-md-1 col-sm-3 animado8" data-aos="fade-up">
@@ -807,7 +837,8 @@
                                                     <img src="images/client/icon_4.png" width="110px">
                                                 </div>
                                                 <div>
-                                                    <span style="color:#04F2F9"> Get Commision </span>
+                                                    <span style="color:#04F2F9" class="lang" key="star-4"> Get Commision
+                                                    </span>
                                                 </div>
                                             </div>
                                         </div>
@@ -842,14 +873,15 @@
 
                             <div class="portfolio-header">
                                 <div class="title-small">
-                                    <p>ECOSYSTEM</p>
+                                    <p class="lang" key="nav9">ECOSYSTEM</p>
                                 </div>
                                 <div class="text-center">
                                     <p class="animado9 text-warning text-uppercase" data-aos="fade-left">///<span
-                                            class="px-3">ECOSYSTEM
+                                            class="px-3 lang" key="eco-sub">ECOSYSTEM
                                             METABIZ</span>///</p>
                                     <p class="animado9" data-aos="fade-up" style="margin-top:10px;">
-                                        <span class="title-lite text-info"> Ecosystem </span><span class="title-bold">
+                                        <span class="title-lite text-info lang" key="nav9"> Ecosystem </span><span
+                                            class="title-bold">
                                             Metabiz
                                         </span>
                                     </p>
@@ -878,7 +910,7 @@
                                 <div class="row align-items-md-center">
                                     <div class="col-12 col-md-6">
                                         <h3 class="fw-bold text-warning">META-MINING</h3>
-                                        <p class="lead text-white">
+                                        <p class="lead text-white lang" key="eco-1-content">
                                             <span>With mining farms in Switzerland and Iceland, META-MINING</span> is
                                             getting bigger and stronger with a <span>focus on BTC mining</span><br><br>
                                             <span>META-MINING</span> is one of <span>NVIDIA's largest customers,
@@ -899,7 +931,7 @@
 
                                     <div class="col-12 col-md-6">
                                         <h3 class="fw-bold text-warning">META-SHEET</h3>
-                                        <p class="lead text-white">
+                                        <p class="lead text-white lang" key="eco-2-content">
                                             <span>The METABIZ token is a cryptocurrency</span> that will be used to
                                             <span>integrate all operations</span> within the <span>metaverse and
                                                 ecosystem</span> of the <span>METABIZ</span> community. <br><br>
@@ -919,7 +951,7 @@
                                 <div class="row align-items-md-center">
                                     <div class="col-12 col-md-6">
                                         <h3 class="fw-bold text-warning">META-NFT</h3>
-                                        <p class="lead text-white">
+                                        <p class="lead text-white lang" key="eco-3-content">
                                             With today's <span>best NFT designers</span> and <span>developers,
                                                 META-NFT</span> provides the team and oppotunities to the
                                             <span>METABIZ</span> community. <br>
@@ -943,7 +975,7 @@
                                 <div class="row align-items-md-center">
                                     <div class="col-12 col-md-6">
                                         <h3 class="fw-bold text-warning">META-GAMES</h3>
-                                        <p class="lead text-white">
+                                        <p class="lead text-white lang" key="eco-4-content">
 
                                             <span>The largest provider of Driver Games in the world, META-GAMES</span>
                                             brings its first version to the direct sales model and closed community.
@@ -964,7 +996,7 @@
                                 <div class="row align-items-md-center">
                                     <div class="col-12 col-md-6">
                                         <h3 class="fw-bold text-warning">META-SPORTS</h3>
-                                        <p class="lead text-white">
+                                        <p class="lead text-white lang" key="eco-5-content">
                                             <span>Made for lovers of sports, betting and casinos, META-SPORTS</span>
                                             brings the taste of victory to the most anticipated project of recent years.
                                             <br><br>
@@ -982,7 +1014,7 @@
                                 <div class="row align-items-md-center">
                                     <div class="col-12 col-md-6">
                                         <h3 class="fw-bold text-warning">METABIZ-UNIVERSITY</h3>
-                                        <p class="lead text-white">
+                                        <p class="lead text-white lang" key="eco-6-content">
                                             <span>MBU will be the first 100% decentralized university in the
                                                 Metaverse.</span><br><br>
                                             The <span>METABIZ</span> community will have preferential access to
@@ -1128,13 +1160,14 @@
                     <div class="display-content">
                         <div class="contact-header">
                             <div class="title-small">
-                                <p>COUNTER</p>
+                                <p class="lang" key="nav11">COUNTER</p>
                             </div>
                             <div class="text-center">
                                 <p class="animado10 text-warning text-uppercase" data-aos="fade-left">///<span
-                                        class="px-3">Counter</span>///</p>
+                                        class="px-3 lang" key="nav11">Counter</span>///</p>
                                 <p class="animado10" data-aos="fade-up" style="margin-top:10px;">
-                                    <span class="title-lite text-info"> Our Estrategy </span><span class="title-bold">
+                                    <span class="title-lite text-info lang" key="con-title"> Our Estrategy </span><span
+                                        class="title-bold">
                                         Metabiz
                                     </span>
                                 </p>
@@ -1169,7 +1202,8 @@
                                                     <div class="animado10" data-aos="fade-right"
                                                         style="width:200px; height:108px; background-size: 100% 100%; background-repeat:no-repeat; background:url(images/cuadro_users.png); background-size: cover; text-align:left; padding:22px; color:white;">
                                                         <p><span style="font-size:30px">0</span>+</p>
-                                                        <p style="font-size:10px">Total Users</p>
+                                                        <p style="font-size:10px" class="lang" key="con-1">Total Users
+                                                        </p>
                                                     </div>
                                                 </center>
                                             </div>
@@ -1178,7 +1212,8 @@
                                                     <div class="animado10" data-aos="fade-up"
                                                         style="width:200px; height:108px; background-size: 100% 100%; background-repeat:no-repeat; background:url(images/cuadro_moneda.png); background-size: cover; text-align:left; padding:22px; color:white;">
                                                         <p><span style="font-size:30px">0</span>+</p>
-                                                        <p style="font-size:10px">Total Whithdraw</p>
+                                                        <p style="font-size:10px" class="lang" key="con-2">Total
+                                                            Whithdraw</p>
                                                     </div>
                                                 </center>
                                             </div>
@@ -1187,7 +1222,8 @@
                                                     <div class="animado10" data-aos="fade-down"
                                                         style="width:200px; height:108px; background-size: 100% 100%; background-repeat:no-repeat; background:url(images/cuadro_pro.png); background-size: cover; text-align:left; padding:22px; color:white;">
                                                         <p><span style="font-size:30px">0</span>+</p>
-                                                        <p style="font-size:10px">Total Deposit</p>
+                                                        <p style="font-size:10px" class="lang" key="con-3">Total Deposit
+                                                        </p>
                                                     </div>
                                                 </center>
                                             </div>
@@ -1196,7 +1232,8 @@
                                                     <div class="animado10" data-aos="fade-left"
                                                         style="width:200px; height:108px; background-size: 100% 100%; background-repeat:no-repeat; background:url(images/cuadro_billete.png); background-size: cover; text-align:left; padding:22px; color:white;">
                                                         <p><span style="font-size:30px">0</span>+</p>
-                                                        <p style="font-size:10px">Total Invest</p>
+                                                        <p style="font-size:10px" class="lang" key="con-4">Total Invest
+                                                        </p>
                                                     </div>
                                                 </center>
                                             </div>
@@ -1224,7 +1261,8 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="copyright animado10" data-aos="fade-up">
-                                            <p>Copyright © 2022 Metabiz | All rights reserved</p>
+                                            <p class="lang" key="copy">Copyright © 2022 Metabiz | All rights reserved
+                                            </p>
                                         </div>
                                     </div>
                                 </div>

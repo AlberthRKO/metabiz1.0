@@ -5,10 +5,20 @@
  *-------------------------------------
  */
 $.getJSON("lang/lang.json", function (json) {
+  // Preguntamos en la memoria local si hay un lenguaje guardado
+  if (!localStorage.getItem("lang")) {
+    localStorage.setItem("lang", "en");
+  }
+  let def = localStorage.getItem("lang");
+  $(".lang").each(function (index, value) {
+    $(this).html(json[def][$(this).attr("key")]);
+  });
+
   $(".translate").click(function () {
     let lang = $(this).attr("id");
+    localStorage.setItem("lang", lang);
     $(".lang").each(function (index, value) {
-      $(this).text(json[lang][$(this).attr("key")]);
+      $(this).html(json[lang][$(this).attr("key")]);
     });
   });
 });
@@ -268,7 +278,7 @@ $.getJSON("lang/lang.json", function (json) {
        * -----------------------------------------------------------------
        */
 
-      if ($(".welcome-area").is(".animated-text")) {
+      /* if ($(".welcome-area").is(".animated-text")) {
         var typed = new Typed("#typed", {
           stringsElement: "#typed-strings",
           typeSpeed: 60,
@@ -277,7 +287,7 @@ $.getJSON("lang/lang.json", function (json) {
           startDelay: 1000,
           loop: true,
         });
-      }
+      } */
     }
     /*
      * -----------------------------------------------------------------
@@ -486,16 +496,25 @@ $.getJSON("lang/lang.json", function (json) {
       },
     });
 
+    // Seccion para cerrar el menu en movil al clickear
     var menues = $(".header-info-area li a");
-
+    var timeout = null;
     // manejador de click sobre todos los elementos
     menues.click(function () {
-      console.log("asdsad");
+      $(".menuMovil").addClass("header-info-bar-off");
+      menues.addClass("d-none");
+      if (timeout) {
+        clearTimeout(timeout);
+        timeout = null;
+      }
+      $(".menuMovil").removeClass("header-info-bar-on");
+      timeout = setTimeout(function () {
+        menues.removeClass("d-none");
+      }, 500);
+      // console.log("asdsad");
       // eliminamos active de todos los elementos
       //  menues.removeClass("active");
       // activamos el elemento clicado.
-      $(".menuMovil").removeClass("header-info-bar-on");
-      $(".menuMovil").addClass("header-info-bar-off");
     });
 
     // Iniciando script venobox.. colocamos el elemnto disparador
