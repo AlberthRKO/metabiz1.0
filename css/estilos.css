@@ -817,4 +817,215 @@ p span {
 .swiper-pagination-bullet {
   background: #ff6e00 !important;
 }
+
+/* Seccion de logins */
+.content-login {
+  position: relative;
+  border-radius: 20px;
+  background-color: #0c0f356e;
+  border: 1px solid #432279;
+  padding: 20px 30px;
+  z-index: 99;
+  -webkit-box-shadow: 0px 17px 19px rgba(109, 100, 139, 0.1);
+          box-shadow: 0px 17px 19px rgba(109, 100, 139, 0.1);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.content-login:hover {
+  border: 1px solid #5223c7;
+  -webkit-box-shadow: 0px 17px 19px rgba(109, 100, 139, 0.31);
+          box-shadow: 0px 17px 19px rgba(109, 100, 139, 0.31);
+}
+
+.content-login::after,
+.content-login::before {
+  content: "";
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  border-radius: 30px;
+  background-color: transparent;
+  /* -webkit-transition: all 0.5s; */
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+.content-login:hover::before {
+  background-color: #0c0f356e;
+  -webkit-transform: rotate(2deg) translateX(-7px) translateY(11px) !important;
+          transform: rotate(2deg) translateX(-7px) translateY(11px) !important;
+}
+
+.content-login:hover::after {
+  background-color: #0c0f356e;
+  -webkit-transform: rotate(2deg) translateX(7px) translateY(-11px) !important;
+          transform: rotate(2deg) translateX(7px) translateY(-11px) !important;
+}
+
+#particle-js {
+  z-index: 0;
+}
+
+.form-control {
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-bottom: 2px solid rgba(192, 192, 192, 0.3);
+  outline: 0 !important;
+}
+
+.inputsito {
+  width: 100%;
+  position: relative;
+}
+
+.form-label {
+  position: absolute;
+  left: 8px;
+  bottom: 0px;
+  color: #eee;
+  font-size: 15px;
+  pointer-events: none;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.form-control:focus {
+  -webkit-box-shadow: 0px 12px 15px -5px rgba(255, 110, 0, 0.75);
+          box-shadow: 0px 12px 15px -5px rgba(255, 110, 0, 0.75);
+}
+
+.form-control:valid,
+.form-control:focus {
+  background-color: transparent !important;
+  border-bottom: 2px solid #ff6e00;
+  color: white;
+}
+
+.form-control:valid ~ .form-label,
+.form-control:focus ~ .form-label {
+  -webkit-transform: translate(-5px, -22px);
+          transform: translate(-5px, -22px);
+  font-size: 12px;
+  color: #ff6e00;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  background-color: transparent !important;
+  border-bottom: 2px solid #ff6e00;
+  color: white;
+  -webkit-text-fill-color: white;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* Seccion de compra */
+.content-datos {
+  width: 80%;
+  margin: auto;
+  height: auto;
+  padding: 15px 20px;
+  -webkit-box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.284);
+          box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.284);
+  border-radius: 10px;
+  margin-bottom: 30px;
+  background: rgba(253, 105, 0, 0.1);
+  border: 1px solid #ff6f00a1;
+  -webkit-transition: .5s;
+  transition: .5s;
+  z-index: 99;
+  position: relative;
+}
+
+.content-datos:hover {
+  border: 1px solid #ff6e00;
+  -webkit-box-shadow: 0px 17px 19px rgba(253, 105, 0, 0.1);
+          box-shadow: 0px 17px 19px rgba(253, 105, 0, 0.1);
+}
+
+.content-datos p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.welcome-area .title-small p::after {
+  content: '';
+  width: 32px;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  top: 12px;
+  right: 16px;
+}
+
+.welcome-area .title-small p::before {
+  content: '';
+  width: 32px;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  top: 12px;
+  left: 16px;
+}
+
+.welcome-header {
+  margin-bottom: 16px;
+}
+
+@media screen and (max-width: 576px) {
+  .welcome-area .work-content,
+  .work .work-content {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .content-login {
+    padding: 20px 15px;
+  }
+}
+
+.welcome-area {
+  background: url(../images/inicio_metabiz.png) center center/cover;
+  z-index: 3;
+}
+
+.compra-section .overlayImg {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: url(../images/overlayImg.png);
+  top: 0;
+  left: 0;
+  opacity: 0.2;
+  -webkit-transform: rotate(45deg) scale(0.7);
+          transform: rotate(45deg) scale(0.7);
+}
+
+.compra-section {
+  background: url(../images/inicio_metabiz.png) center center/cover;
+  background-size: cover;
+  text-align: center;
+}
+
+.compra-section .display-content {
+  position: relative;
+  overflow: hidden;
+}
 /*# sourceMappingURL=estilos.css.map */
