@@ -859,10 +859,21 @@ select:-webkit-autofill:focus {
 	z-index: 99;
 	position: relative;
 }
+.content-failed:hover,
 .content-datos:hover{
   border: 1px solid #ff6e00;
   // transform: translateY(-10px);
   box-shadow: 0px 17px 19px rgba(253, 105, 0, .1);
+}
+.content-failed{
+  position: relative;
+  border-radius: 20px;
+  background: rgba(253, 105, 0, 0.1);
+  border: 1px solid #ff6f00a1;
+  padding: 20px 30px;
+  z-index: 99;
+  box-shadow: 0px 17px 19px rgba(109, 100, 139 , .10);
+  transition: all .3s ease-in-out;
 }
 
 .content-datos p{
@@ -897,6 +908,7 @@ select:-webkit-autofill:focus {
     padding-left: 10px;
     padding-right: 10px;
   }
+  .content-failed,
   .content-login{
     padding: 20px 15px;
   }
@@ -924,4 +936,125 @@ select:-webkit-autofill:focus {
 .compra-section .display-content{
   position: relative;
   overflow: hidden;
+}
+
+
+/* ----------------------
+* Estilos de las tablas
+----------------------- */
+table{
+  th, td {
+    padding:15px 20px;
+    
+  }
+  tbody{
+    border: none !important;
+  }
+}
+.table{
+  margin-bottom: 0.5rem;
+}
+
+
+tr{
+  background-color: transparent;
+  border:none;
+  color: white;
+  margin-bottom: 2px;
+  border-top: 10px solid transparent;
+}
+tr:hover, tr:hover tbody{
+  color: white;
+  background-color: #15152f !important;
+}
+
+//* Estilos para el data Table
+
+.dataTables_wrapper{
+  padding: .5rem 0;
+}
+
+table.dataTable{
+  border-collapse: collapse !important;
+}
+table.dataTable>tbody>tr {
+  background-color: transparent;
+}
+
+.dataTables_paginate span{
+  padding: 0px 5px;
+  cursor: pointer;
+}
+.page-item.active .page-link,
+.page-item:not(:first-child) .page-link{
+  padding: 5px;
+  margin: 0 3px;
+  background: transparent;
+  color: white;
+  border-radius: 5px;
+  font-size: 12px;
+  text-decoration: none;
+}
+.page-item:first-child .page-link,
+.page-item:last-child .page-link{
+  background: transparent;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+// contador de datos
+.dataTables_wrapper .dataTables_length select{
+  background: transparent;
+  color: white;
+  border: none;
+  border: 1px solid #432279;
+  border-radius: 5px;
+  padding: 0 3px;
+  outline: none;
+}
+.dataTables_wrapper .dataTables_length select option{
+  border: none;
+  background-color: transparent !important;
+}
+.dataTables_wrapper .dataTables_length select:hover,
+.dataTables_wrapper .dataTables_length select:focus,
+.dataTables_paginate .previous:hover,
+.dataTables_paginate .next:hover,
+.dataTables_paginate span a:hover{
+  background: transparent;
+}
+.dataTables_wrapper .dataTables_filter input{
+  margin-top: 10px;
+  background: transparent;
+  border: none;
+  padding: 5px 5px;
+  border-bottom: 2px solid rgba($color: silver, $alpha: .3);
+  color: white;
+  border-radius: 5px;
+  outline: none;
+}
+.dataTables_wrapper .dataTables_filter input:focus,
+.dataTables_wrapper .dataTables_filter input:hover{
+  // border: none;
+  border-bottom: 2px solid $brillante;
+  background: transparent;
+}
+table.dataTable thead th, table.dataTable thead td, table.dataTable tfoot th, table.dataTable tfoot td, table.dataTable tbody td,table.dataTable tbody th {
+  text-align: left !important;
+}
+.select-selected {
+  background-color: red !important;
+}
+
+
+
+thead tr{
+  background: linear-gradient(to right, #5e0a2e, #02121f) !important;
+}
+th{
+  white-space: nowrap;
 }

@@ -1,7 +1,3 @@
-$(document).ready(function () {
-  $("#example").DataTable();
-});
-
 (function ($) {
   "use strict";
 
@@ -14,15 +10,15 @@ $(document).ready(function () {
      * -----------------------------------------------------------------
      */
     /*  const preloader = document.querySelector("#preloaderfinal");
-      if (preloader) {
-        window.addEventListener("load", () => {
-          preloader.remove();
-        });
-      } */
+        if (preloader) {
+          window.addEventListener("load", () => {
+            preloader.remove();
+          });
+        } */
     /* $(".translate").click(function () {
-        let lang = $(this).attr("id");
-        console.log(lang);
-      }); */
+          let lang = $(this).attr("id");
+          console.log(lang);
+        }); */
 
     var themeWindow = $(window);
     var pagebody = $("html, body");
@@ -35,9 +31,9 @@ $(document).ready(function () {
     });
 
     /* var anchor = $('a[href="#"]');
-      anchor.on("click", function () {
-        e.preventDefault();
-      }); */
+        anchor.on("click", function () {
+          e.preventDefault();
+        }); */
 
     /*
      * -----------------------------------------------------------------
@@ -135,7 +131,7 @@ $(document).ready(function () {
         $(".animado10").hide(0);
         $(".animado10").removeClass("aos-init").removeClass("aos-animate");
         /*       $(".animado11").hide(0);
-          $(".animado11").removeClass("aos-init").removeClass("aos-animate"); */
+            $(".animado11").removeClass("aos-init").removeClass("aos-animate"); */
         if (nextIndex == 1) {
           $(".animado1").show(0);
           AOS.init({
@@ -247,16 +243,16 @@ $(document).ready(function () {
           });
         }
         /*  if (nextIndex == 11) {
-            $(".animado11").show(0);
-            AOS.init({
-              easing: "ease-in-out-back",
-              duration: 1500,
-              once: true,
-              mirror: true,
-              anchorPlacement: "top-center",
-              offset: -1500,
-            });
-          } */
+              $(".animado11").show(0);
+              AOS.init({
+                easing: "ease-in-out-back",
+                duration: 1500,
+                once: true,
+                mirror: true,
+                anchorPlacement: "top-center",
+                offset: -1500,
+              });
+            } */
       },
     });
   });

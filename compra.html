@@ -9,22 +9,18 @@
     <!--css styles-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/lightbox.css">
     <link rel="stylesheet" href="css/jquery.pagepiling.min.css" />
     <link rel="stylesheet" href="css/aos.css">
     <link
         href="https://fonts.googleapis.com/css?family=Martel:200,300,400,600,700,800,900%7CRaleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i%7CRoboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.css">
+
+    <link rel="stylesheet" href="libs/tables/dataTables.bootstrap5.min.css">
+
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/venobox.css">
-    <link rel="stylesheet" href="css/swiper.min.css">
-    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
     <!---title logo icon-->
     <link rel="shortcut icon" href="images/icono_metabiz.png" />
     <link rel="stylesheet" href="css/estilos.css">
@@ -114,11 +110,18 @@
                                                             <label for="wallet" class="form-label">Wallet</label>
                                                         </div>
                                                     </div>
+                                                    <div class="col-12">
+                                                        <div class="mb-4 inputsito">
+                                                            <input type="text" class="form-control" id="source" required
+                                                                autocomplete="off">
+                                                            <label for="source" class="form-label">Source</label>
+                                                        </div>
+                                                    </div>
                                                 </form>
 
 
                                                 <p class="mb-2">
-                                                    <a href="#" class="btn btn-primario py-2 mt-2 animado1"
+                                                    <a href="success.html" class="btn btn-primario py-2 mt-2 animado1"
                                                         data-aos="fade-left" data-aos-offset="-1000">BUY NOW</a>
                                                 </p>
 
@@ -133,6 +136,163 @@
 
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 px-4 py-5">
+                                <div class="content-login py-4 px-2 position-relative">
+                                    <h2 class="h3 text-uppercase text-white text-center">Shopping list</h2>
+                                    <div class="detalle w-100 position-relative table-responsive">
+                                        <table id="example" class="table table-sm table-borderless text-white">
+                                            <thead>
+                                                <tr>
+                                                    <th># Factura</th>
+                                                    <th>Exchange fee</th>
+                                                    <th>Network fee</th>
+                                                    <th>Valor</th>
+                                                    <th>Estado</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>#12</th>
+                                                    <td>0.00315782 ETH</td>
+                                                    <td>0.00185467 ETH</td>
+                                                    <td>$10.00</td>
+                                                    <td><span class="badge badge-primario">Pendiente</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>#34</th>
+                                                    <td>0.00315782 ETH</td>
+                                                    <td>0.00185467 ETH</td>
+                                                    <td>$10.00</td>
+                                                    <td><span class="badge badge-pagado">Pagado</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>#43</th>
+                                                    <td>0.00315782 ETH</td>
+                                                    <td>0.00185467 ETH</td>
+                                                    <td>$10.00</td>
+                                                    <td><span class="badge badge-primario">Pendiente</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>#59</th>
+                                                    <td>0.00315782 ETH</td>
+                                                    <td>0.00185467 ETH</td>
+                                                    <td>$10.00</td>
+                                                    <td><span class="badge badge-pagado">Pagado</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>#67</th>
+                                                    <td>0.00315782 ETH</td>
+                                                    <td>0.00185467 ETH</td>
+                                                    <td>$10.00</td>
+                                                    <td><span class="badge badge-primario">Pendiente</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>#78</th>
+                                                    <td>0.00315782 ETH</td>
+                                                    <td>0.00185467 ETH</td>
+                                                    <td><span class="badge badge-pagado">Pagado</span></td>
+                                                    <td><span class="badge badge-secundario">Hacer Pago</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>#89</th>
+                                                    <td>0.00315782 ETH</td>
+                                                    <td>0.00185467 ETH</td>
+                                                    <td>$10.00</td>
+                                                    <td><span class="badge badge-pagado">Pagado</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>#59</th>
+                                                    <td>0.00315782 ETH</td>
+                                                    <td>0.00185467 ETH</td>
+                                                    <td>$10.00</td>
+                                                    <td><span class="badge badge-pagado">Pagado</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>#67</th>
+                                                    <td>0.00315782 ETH</td>
+                                                    <td>0.00185467 ETH</td>
+                                                    <td>$10.00</td>
+                                                    <td><span class="badge badge-primario">Pendiente</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>#78</th>
+                                                    <td>0.00315782 ETH</td>
+                                                    <td>0.00185467 ETH</td>
+                                                    <td><span class="badge badge-pagado">Pagado</span></td>
+                                                    <td><span class="badge badge-secundario">Hacer Pago</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>#89</th>
+                                                    <td>0.00315782 ETH</td>
+                                                    <td>0.00185467 ETH</td>
+                                                    <td>$10.00</td>
+                                                    <td><span class="badge badge-pagado">Pagado</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>#59</th>
+                                                    <td>0.00315782 ETH</td>
+                                                    <td>0.00185467 ETH</td>
+                                                    <td>$10.00</td>
+                                                    <td><span class="badge badge-pagado">Pagado</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>#67</th>
+                                                    <td>0.00315782 ETH</td>
+                                                    <td>0.00185467 ETH</td>
+                                                    <td>$10.00</td>
+                                                    <td><span class="badge badge-primario">Pendiente</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>#78</th>
+                                                    <td>0.00315782 ETH</td>
+                                                    <td>0.00185467 ETH</td>
+                                                    <td><span class="badge badge-pagado">Pagado</span></td>
+                                                    <td><span class="badge badge-secundario">Hacer Pago</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>#89</th>
+                                                    <td>0.00315782 ETH</td>
+                                                    <td>0.00185467 ETH</td>
+                                                    <td>$10.00</td>
+                                                    <td><span class="badge badge-pagado">Pagado</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>#59</th>
+                                                    <td>0.00315782 ETH</td>
+                                                    <td>0.00185467 ETH</td>
+                                                    <td>$10.00</td>
+                                                    <td><span class="badge badge-pagado">Pagado</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>#67</th>
+                                                    <td>0.00315782 ETH</td>
+                                                    <td>0.00185467 ETH</td>
+                                                    <td>$10.00</td>
+                                                    <td><span class="badge badge-primario">Pendiente</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>#78</th>
+                                                    <td>0.00315782 ETH</td>
+                                                    <td>0.00185467 ETH</td>
+                                                    <td><span class="badge badge-pagado">Pagado</span></td>
+                                                    <td><span class="badge badge-secundario">Hacer Pago</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>#89</th>
+                                                    <td>0.00315782 ETH</td>
+                                                    <td>0.00185467 ETH</td>
+                                                    <td>$10.00</td>
+                                                    <td><span class="badge badge-pagado">Pagado</span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
@@ -158,33 +318,16 @@
     <!-- carga de animacion -->
     <script src="js/aos.js"></script>
     <!-- <script src="js/bootstrap.min.js"></script> -->
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/lightbox.js"></script>
-    <script src="js/typed.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/mixitup.min.js"></script>
-    <script src="js/animatedModal.min.js"></script>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.js"></script> -->
+    <script src="libs/tables/jquery.dataTables.min.js"></script>
+    <script src="libs/tables/dataTables.bootstrap5.min.js"></script>
+
     <script src="js/jquery.pagepiling.min.js"></script>
-    <script src="js/jquery.singlePageNav.min.js"></script>
     <script src="js/particles.min.js"></script>
     <script src="js/app-particle.js"></script>
-    <script src="js/venobox.min.js"></script>
-    <script src="js/swiper.min.js"></script>
-    <script defer src="js/jquery.flexslider-min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <script src="js/main2.js"></script>
-    <script>
-        $(window).load(function () {
-            $('.flexslider').flexslider({
-                animation: "slide",
-            });
-            $('.flexslider1').flexslider({
-                animation: "slide",
-            });
-        });
-    </script>
 </body>
